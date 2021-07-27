@@ -39,6 +39,7 @@ export const mappingForLayoutTests = new Map<string, string>([
   ['panels/browser_debugger', 'browser_debugger'],
   ['panels/changes', 'changes'],
   ['panels/console', 'console'],
+  ['panels/custom', 'custom'],
   ['panels/elements', 'elements'],
   ['panels/emulation', 'emulation'],
   ['panels/mobile_throttling', 'mobile_throttling'],

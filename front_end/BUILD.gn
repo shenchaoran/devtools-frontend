@@ -77,6 +77,7 @@ group("legacy_entrypoints") {
     "panels/browser_debugger:legacy",
     "panels/changes:legacy",
     "panels/console:legacy",
+    "panels/custom:legacy",
     "panels/coverage:legacy",
     "panels/elements:legacy",
     "panels/emulation:legacy",

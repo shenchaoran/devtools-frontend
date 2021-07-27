@@ -53,6 +53,7 @@ devtools_entrypoint("bundle") {
     "../../legacy_test_runner/*",
     "../../panels/application/*",
     "../../panels/console/*",
+    "../../panels/custom/*",
     "../../panels/coverage/*",
     "../../panels/input/*",
     "../../panels/network/*",
