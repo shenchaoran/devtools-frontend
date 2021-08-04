@@ -44,7 +44,7 @@ const onFileChange = (_, fileName) => {
     return;
   }
 
-  autoninja = childProcess.spawn('autoninja', ['-C', `out/${target}`], {cwd, env, stdio: 'inherit'});
+  autoninja = childProcess.spawn('autoninja', ['-C', `../out/${target}`], {cwd, env, stdio: 'inherit'});
   autoninja.on('close', () => {
     autoninja = null;
     if (restartBuild) {
@@ -56,6 +56,6 @@ const onFileChange = (_, fileName) => {
 };
 
 // Watch the front_end and test folder and build on any change.
-console.log(`Watching for changes in ${frontEndDir} and ${testsDir}; building to out/${target}`);
+console.log(`Watching for changes in ${frontEndDir} and ${testsDir}; building to ../out/${target}`);
 fs.watch(`${frontEndDir}`, {recursive: true}, onFileChange);
 fs.watch(`${testsDir}`, {recursive: true}, onFileChange);
